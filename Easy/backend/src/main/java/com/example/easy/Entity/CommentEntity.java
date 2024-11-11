@@ -1,14 +1,16 @@
 package com.example.easy.Entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.ZonedDateTime;
 
 @Table(name="comment")
+@Entity
+@Getter
+@Setter
 public class CommentEntity {
     @ManyToOne
     @JoinColumn(name = "user_id", referencedColumnName = "user_id")
