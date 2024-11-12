@@ -1,11 +1,16 @@
 package com.example.easy.Entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.ZonedDateTime;
 
 @Table(name = "board")
+@Entity
+@Getter
+@Setter
 public class BoardEntity {
     @ManyToOne
     @JoinColumn(name = "user_id", referencedColumnName = "user_id")

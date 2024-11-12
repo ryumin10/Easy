@@ -6,10 +6,10 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Builder
-@Getter
-@Setter
 @Table(name="user")
 @Entity
+@Getter
+@Setter
 public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
