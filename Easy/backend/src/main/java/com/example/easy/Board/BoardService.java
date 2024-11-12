@@ -1,15 +1,11 @@
-package com.example.easy.Service;
+package com.example.easy.Board;
 
 import com.example.easy.Entity.BoardEntity;
-import com.example.easy.Entity.UserEntity;
-import com.example.easy.Repository.BoardRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import com.example.easy.DTO.BoardDTO;
 
 import java.time.ZonedDateTime;
 import java.util.Optional;
-import java.util.OptionalInt;
 
 @Service
 @RequiredArgsConstructor

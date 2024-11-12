@@ -1,8 +1,5 @@
-package com.example.easy.Controller;
+package com.example.easy.Board;
 
-import com.example.easy.DTO.BoardDTO;
-import com.example.easy.Service.BoardService;
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,7 +18,7 @@ public class BoardController {
 
     // 게시물 조회
     @GetMapping
-    public BoardDTO get(@RequestParam int boardNo) {
+    public BoardDTO get(@PathVariable int boardNo) {
         return boardService.get(boardNo);
     }
 

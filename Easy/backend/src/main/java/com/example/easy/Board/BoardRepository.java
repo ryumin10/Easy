@@ -1,4 +1,4 @@
-package com.example.easy.Repository;
+package com.example.easy.Board;
 
 import com.example.easy.Entity.BoardEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
